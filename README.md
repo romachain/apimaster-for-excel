@@ -78,8 +78,8 @@ APIMaster for Excel is an AI agent that lives inside Excel. It reads your workbo
 ### Setup
 
 ```bash
-git clone https://github.com/tmustier/pi-for-excel.git
-cd pi-for-excel
+git clone https://github.com/romachain/apimaster-for-excel.git
+cd apimaster-for-excel
 npm install
 
 # Generate local HTTPS certs (Office.js requires HTTPS)
