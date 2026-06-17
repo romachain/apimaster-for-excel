@@ -4,9 +4,10 @@ import { spawn } from "node:child_process";
 import net from "node:net";
 import { once } from "node:events";
 import { setTimeout as delay } from "node:timers/promises";
+import { fileURLToPath } from "node:url";
 
 const ORIGIN = "https://localhost:3000";
-const BRIDGE_SCRIPT_PATH = new URL("../scripts/python-bridge-server.mjs", import.meta.url).pathname;
+const BRIDGE_SCRIPT_PATH = fileURLToPath(new URL("../scripts/python-bridge-server.mjs", import.meta.url));
 
 async function getFreePort() {
   return new Promise((resolve, reject) => {
