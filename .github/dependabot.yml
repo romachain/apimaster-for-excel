@@ -13,6 +13,12 @@ updates:
       - dependency-name: "eslint"
         update-types:
           - "version-update:semver-major"
+      # typescript-eslint does not yet support TypeScript 6, and TS 6 errors on
+      # the deprecated baseUrl option. Hold major TS bumps until the toolchain
+      # catches up (see PR proposing typescript 6.0).
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
     groups:
       pi-stack:
         patterns:
