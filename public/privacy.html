@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — APIMaster for Excel</title>
+  <link rel="icon" href="/assets/icon-32.png" />
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0; padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65; color: #1c1c28; background: #f7f7fb;
+    }
+    .hero { background: radial-gradient(120% 120% at 50% 0%, #42307a, #2a1f50); color: #eef; padding: 48px 24px 40px; text-align: center; }
+    .hero img { width: 56px; height: 56px; border-radius: 14px; }
+    .hero h1 { margin: 16px 0 6px; font-size: 26px; }
+    .hero p { margin: 0; opacity: .8; font-size: 14px; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 24px 64px; }
+    h2 { font-size: 19px; margin: 32px 0 8px; }
+    p, li { font-size: 15px; }
+    a { color: #1768d6; }
+    code { background: #ececf3; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+    .muted { color: #5b5b6b; font-size: 13px; }
+    footer { text-align: center; padding: 24px; color: #5b5b6b; font-size: 13px; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e6e6ef; background: #16161e; }
+      code { background: #2a2a36; }
+      .muted, footer { color: #9a9aac; }
+      a { color: #6db4ff; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="/assets/icon-80.png" alt="APIMaster" />
+    <h1>Privacy Policy</h1>
+    <p>APIMaster for Excel</p>
+  </div>
+  <main>
+    <p class="muted">Effective date: June 16, 2026</p>
+
+    <p>This Privacy Policy explains how APIMaster (“we”, “us”), the operator of
+      <a href="https://apimaster.ai">apimaster.ai</a>, handles information in connection with the
+      <strong>APIMaster for Excel</strong> add-in (the “Add-in”). By installing or using the Add-in,
+      you agree to this Policy.</p>
+
+    <h2>1. What the Add-in is</h2>
+    <p>The Add-in is an AI assistant that runs inside Microsoft Excel. At your direction, it reads
+      content from your active workbook, makes changes you request, and sends your instructions and
+      the relevant workbook content to an AI model through the APIMaster gateway to generate responses.</p>
+
+    <h2>2. Information processed</h2>
+    <ul>
+      <li><strong>Your API key.</strong> Your APIMaster API key is stored locally on your device in the
+        browser storage used by the Excel web view (IndexedDB/local storage). It is not sent to any
+        server we operate. It is transmitted only to the APIMaster gateway
+        (<code>https://apimaster.ai</code>) as an authorization credential when you make a request.</li>
+      <li><strong>Workbook content & prompts.</strong> When you send a message or use a feature, the
+        relevant spreadsheet data and your instructions are transmitted directly from your device to the
+        APIMaster gateway and forwarded to the AI model provider you select, solely to produce a response.</li>
+      <li><strong>Local settings & history.</strong> Preferences, selected model, and conversation history
+        are stored locally on your device to provide the experience. They remain on your device until you
+        clear them.</li>
+      <li><strong>Optional external services.</strong> If you enable optional features (e.g. web search,
+        extensions, or MCP connections), the queries you trigger are sent to those third-party services
+        you choose.</li>
+    </ul>
+
+    <h2>3. What we do not do</h2>
+    <p>The Add-in is a static web application. We do not operate an application backend that receives,
+      stores, or processes your workbook content or prompts, and we do not sell your information. AI
+      requests go from your device to the APIMaster gateway directly.</p>
+
+    <h2>4. Hosting and the gateway</h2>
+    <p>The Add-in’s files are served by our hosting provider, which may automatically log standard
+      technical request metadata (such as IP address, timestamp, and user-agent) to deliver and secure
+      the site. Your AI requests are processed by the APIMaster gateway and the model provider you select,
+      under the APIMaster terms and privacy practices published at
+      <a href="https://apimaster.ai">apimaster.ai</a>.</p>
+
+    <h2>5. Data retention</h2>
+    <p>Information stored locally stays on your device until you delete it (for example, by removing your
+      key, clearing the Add-in’s data, or uninstalling the Add-in). Handling of transmitted requests by the
+      gateway and model providers is governed by their respective policies.</p>
+
+    <h2>6. Your choices</h2>
+    <p>You can remove your API key, clear locally stored data, and uninstall the Add-in at any time. You
+      control what content you send by choosing when to use the Add-in’s features.</p>
+
+    <h2>7. Children</h2>
+    <p>The Add-in is not directed to children under 16, and we do not knowingly process their information.</p>
+
+    <h2>8. Changes</h2>
+    <p>We may update this Policy from time to time. Material changes will be reflected by updating the
+      effective date above.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions about this Policy: <a href="mailto:support@apimaster.ai">support@apimaster.ai</a>.</p>
+  </main>
+  <footer>© 2026 APIMaster · <a href="/terms.html">Terms of Use</a></footer>
+</body>
+</html>

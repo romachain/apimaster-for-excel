@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APIMaster for Excel — AI assistant for your spreadsheet</title>
+  <meta name="description" content="APIMaster for Excel is an AI assistant sidebar for Excel. Read, edit, and explain your spreadsheet in plain language, powered by APIMaster — bring your own key and choose from Claude, GPT-5, DeepSeek and more." />
+  <link rel="icon" href="/assets/icon-32.png" />
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.6; color:#1c1c28; background:#f7f7fb; }
+    .hero { background:radial-gradient(120% 120% at 50% 0%, #42307a, #2a1f50); color:#eef; padding:64px 24px 56px; text-align:center; }
+    .hero img { width:84px; height:84px; border-radius:20px; box-shadow:0 8px 30px rgba(0,0,0,.35); }
+    .hero h1 { margin:20px 0 8px; font-size:34px; }
+    .hero p { margin:0 auto; max-width:620px; font-size:17px; opacity:.85; }
+    .cta { display:inline-block; margin-top:24px; background:#48d4ff; color:#10233a; font-weight:600; text-decoration:none; padding:12px 26px; border-radius:10px; }
+    main { max-width:920px; margin:0 auto; padding:48px 24px 72px; }
+    h2 { font-size:22px; margin:40px 0 12px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:8px; }
+    .card { background:#fff; border:1px solid #e7e7ef; border-radius:14px; padding:18px 20px; }
+    .card h3 { margin:0 0 6px; font-size:16px; }
+    .card p { margin:0; font-size:14px; color:#4a4a5a; }
+    ol { padding-left:20px; } ol li { margin:6px 0; }
+    a { color:#1768d6; }
+    code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; background:#ececf3; padding:2px 6px; border-radius:5px; word-break:break-all; }
+    .card ol { padding-left:18px; margin:8px 0 0; } .card ol li { margin:5px 0; font-size:13.5px; color:#4a4a5a; }
+    .dl-btn { display:inline-block; margin:14px 0 26px; background:#42307a; color:#fff; font-weight:600; text-decoration:none; padding:11px 24px; border-radius:10px; font-size:15px; }
+    .note { font-size:13px; color:#6b6b7b; margin:6px 0 0; }
+    footer { text-align:center; padding:28px; color:#6b6b7b; font-size:13px; border-top:1px solid #e7e7ef; }
+    @media (prefers-color-scheme: dark){
+      body{color:#e6e6ef;background:#16161e;} .card{background:#1f1f29;border-color:#2c2c38;} .card p{color:#a6a6b6;}
+      a{color:#6db4ff;} footer{color:#9a9aac;border-color:#2c2c38;}
+      code{background:#2a2a36;} .card ol li{color:#a6a6b6;} .dl-btn{background:#5a44a0;} .note{color:#9a9aac;}
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="/assets/icon-128.png" alt="APIMaster for Excel" />
+    <h1>APIMaster for Excel</h1>
+    <p>An AI assistant that lives in your spreadsheet — read, edit, and explain Excel in plain language, powered by APIMaster.</p>
+    <a class="cta" href="#install">Get the add-in</a>
+  </div>
+
+  <main>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card"><h3>Understands your workbook</h3><p>Reads every sheet, its structure, formulas, and named ranges, then gives a clear overview.</p></div>
+      <div class="card"><h3>Edits by instruction</h3><p>Write values, fill formulas down columns, reshape ranges, and clean up data — just describe it.</p></div>
+      <div class="card"><h3>Formats with words</h3><p>Apply number formats, styles, and conditional formatting by saying what you want.</p></div>
+      <div class="card"><h3>Explains &amp; debugs</h3><p>Explain any formula in plain language and trace precedents/dependents to find errors.</p></div>
+      <div class="card"><h3>Many models, one key</h3><p>Choose Claude Opus, Claude Sonnet, GPT-5, DeepSeek, Kimi, MiniMax and more — switch any time.</p></div>
+      <div class="card"><h3>You stay in control</h3><p>Auto or Confirm mode, with automatic backups created before edits.</p></div>
+    </div>
+
+    <h2 id="install">How to install</h2>
+    <p>No coding or developer tools required. First download the add-in manifest, then add it to Excel using whichever method matches how you use Excel.</p>
+    <a class="dl-btn" href="/manifest.prod.xml">⬇ Download manifest.prod.xml</a>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Excel on the web <span style="font-weight:400;color:#48a0ff;">· easiest</span></h3>
+        <ol>
+          <li>Open <a href="https://www.office.com/launch/excel">Excel on the web</a> and open or create a workbook.</li>
+          <li>On the <strong>Home</strong> tab, click <strong>Add-ins</strong> → <strong>More Add-ins</strong>.</li>
+          <li>Go to <strong>My Add-ins</strong> → <strong>Upload My Add-in</strong>.</li>
+          <li>Choose the <code>manifest.prod.xml</code> you downloaded → <strong>Upload</strong>.</li>
+          <li>Click <strong>Open APIMaster</strong> in the Home ribbon.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Excel desktop — Windows</h3>
+        <ol>
+          <li>Open Excel.</li>
+          <li>Go to <strong>Insert</strong> → <strong>My Add-ins</strong>.</li>
+          <li>Click <strong>Upload My Add-in…</strong> <em>(not “Manage → XML Expansion Packs”)</em>.</li>
+          <li>Select the <code>manifest.prod.xml</code> file.</li>
+          <li>Click <strong>Open APIMaster</strong> in the ribbon.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Excel desktop — Mac</h3>
+        <ol>
+          <li>In Finder press <strong>⌘ + ⇧ + G</strong> and go to:<br><code>~/Library/Containers/com.microsoft.Excel/Data/Documents/wef</code><br><span class="note">Create the folder if it doesn’t exist.</span></li>
+          <li>Copy <code>manifest.prod.xml</code> into that folder.</li>
+          <li>Quit Excel (<strong>⌘ + Q</strong>) and reopen it.</li>
+          <li>Go to <strong>Insert</strong> → <strong>My Add-ins</strong> → select <strong>APIMaster for Excel</strong>.</li>
+          <li>Click <strong>Open APIMaster</strong> in the ribbon.</li>
+        </ol>
+      </div>
+    </div>
+    <p class="note">Deploying for a whole team? An IT admin can push it to everyone via the Microsoft 365 admin center → <strong>Settings → Integrated apps → Upload custom apps</strong>, so users don’t install anything themselves.</p>
+
+    <h2>Enter your key &amp; start</h2>
+    <ol>
+      <li>Click <strong>Open APIMaster</strong> in the Excel Home ribbon to open the sidebar.</li>
+      <li>Paste your <strong>APIMaster API key</strong> and click <strong>Save &amp; start</strong>. The gateway and models are already configured — no other setup needed. Don’t have a key? Get one at <a href="https://apimaster.ai">apimaster.ai</a>.</li>
+      <li>Pick a model and ask, e.g. <em>“Explain this workbook”</em> or <em>“Fill B2:B100 with =A2*1.1”</em>.</li>
+    </ol>
+
+    <h2>Privacy</h2>
+    <p>Your API key is stored locally on your device. Spreadsheet content and prompts are sent from your browser directly to the APIMaster gateway and the model you choose. There is no separate application backend collecting your data. See our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Use</a>.</p>
+
+    <h2>Support</h2>
+    <p>Questions or issues? Contact <a href="mailto:support@apimaster.ai">support@apimaster.ai</a> or visit <a href="https://apimaster.ai">apimaster.ai</a>.</p>
+  </main>
+
+  <footer>© 2026 APIMaster · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></footer>
+</body>
+</html>
