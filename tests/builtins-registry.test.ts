@@ -259,7 +259,7 @@ void test("extensions hub groups connections, plugins, and skills with tabs", as
   );
 
   assert.match(hubSource, /title:\s*"Extensions"/);
-  assert.match(hubSource, /Connections, plugins, and skills that extend Pi/);
+  assert.match(hubSource, /Connections, plugins, and skills that extend APIMaster/);
   assert.match(hubSource, /dataset\.hubTab/);
   assert.match(hubSource, /dataset\.hubPanel/);
   assert.match(connectionsSource, /Web search/);

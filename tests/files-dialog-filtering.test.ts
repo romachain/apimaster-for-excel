@@ -205,7 +205,7 @@ void test("resolveFilesDialogSourceLabel maps each source", () => {
     sourceKind: "builtin-doc",
     locationKind: "builtin-doc",
     readOnly: true,
-  })), "Pi documentation");
+  })), "APIMaster documentation");
 
   assert.equal(resolveFilesDialogSourceLabel(makeFile("notes/today.md")), "Written by agent");
   assert.equal(resolveFilesDialogSourceLabel(makeFile("folder/readme.md", { locationKind: "native-directory" })), "Local file");
