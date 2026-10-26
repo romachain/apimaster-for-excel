@@ -36,20 +36,20 @@
     "@earendil-works/pi-agent-core": "0.87.1",
     "@earendil-works/pi-ai": "0.87.1",
     "@earendil-works/pi-web-ui": "0.75.3",
-    "@sinclair/typebox": "^0.34.49",
+    "@sinclair/typebox": "^0.34.52",
     "lit": "^3.3.3",
-    "marked": "^18.0.5"
+    "marked": "^18.1.1"
   },
   "devDependencies": {
-    "@types/office-js": "^1.0.592",
-    "eslint": "^10.5.0",
+    "@types/office-js": "^1.0.613",
+    "eslint": "^10.13.0",
     "office-addin-debugging": "^6.0.6",
     "office-addin-manifest": "^2.1.2",
-    "sharp": "^0.35.1",
-    "typebox": "^1.2.14",
+    "sharp": "^0.35.5",
+    "typebox": "^1.4.3",
     "typescript": "^5.7.0",
-    "typescript-eslint": "^8.61.1",
-    "vite": "^8.0.16"
+    "typescript-eslint": "^8.72.0",
+    "vite": "^8.3.5"
   },
   "license": "MIT",
   "repository": {
